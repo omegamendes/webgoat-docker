@@ -1,14 +1,10 @@
-FROM java:8
+FROM anapsix/alpine-java:jdk8
 
 MAINTAINER Matheus Rocha Mendes "matheusrochamendes@gmail.com"
 
-ENV APP /usr/src
+ENV APP /
 
-RUN \
-	pwd && \
-	ls && \
-	wget https://s3.amazonaws.com/webgoat-war/webgoat-container-7.0.1-war-exec.jar && \
-	mv webgoat-container-7.0.1-war-exec.jar /usr/src/
+RUN  wget https://s3.amazonaws.com/webgoat-war/webgoat-container-7.0.1-war-exec.jar
 
 WORKDIR $APP
 
