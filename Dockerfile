@@ -1,6 +1,6 @@
 FROM java:8
 
-MAINTAINER Matheus Rocha Mendes "matheusrochamendes@gmaill.com"
+MAINTAINER Matheus Rocha Mendes "matheusrochamendes@gmail.com"
 
 ENV APP /usr/src
 
